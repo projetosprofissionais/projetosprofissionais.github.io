@@ -3,161 +3,345 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rogerio Otaviano | Portfólio</title>
+    <title>Rogerio Otaviano Mesquita Junior | Portfólio</title>
+    <meta name="description" content="Portfólio de Rogerio Otaviano Mesquita Junior - Desenvolvedor Full Stack">
     <link rel="stylesheet" href="style.css">
-    <!-- Ícones -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    
-    <!-- Navbar -->
+
+    <!-- NAVBAR -->
     <nav class="navbar">
-        <div class="logo">Rogerio<span>Dev</span></div>
+        <a href="#" class="logo">
+            <span class="logo-text">Mesquita</span><span class="logo-accent">Dev</span>
+        </a>
         <ul class="nav-links">
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projetos">Projetos</a></li>
-            <li><a href="#contato">Contato</a></li>
+            <li><a href="#sobre" class="nav-link"><i class="fas fa-user"></i> <span>Sobre</span></a></li>
+            <li><a href="#skills" class="nav-link"><i class="fas fa-code"></i> <span>Skills</span></a></li>
+            <li><a href="#projetos" class="nav-link"><i class="fas fa-folder"></i> <span>Projetos</span></a></li>
+            <li><a href="#contato" class="nav-link"><i class="fas fa-envelope"></i> <span>Contato</span></a></li>
         </ul>
         <div class="menu-toggle">
             <i class="fas fa-bars"></i>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <header class="hero">
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-bg">
+            <div class="hero-circle hero-circle-1"></div>
+            <div class="hero-circle hero-circle-2"></div>
+            <div class="hero-circle hero-circle-3"></div>
+        </div>
         <div class="hero-content">
-            <h1>Olá, eu sou <span class="destaque">Rogerio Otaviano</span></h1>
-            <p>Desenvolvedor Full Stack</p>
-            <p class="subtitulo">Transformando ideias em código</p>
-            <a href="#projetos" class="btn">Ver Projetos</a>
-            <a href="#contato" class="btn btn-outline">Falar Comigo</a>
-        </div>
-        <div class="hero-social">
-            <a href="https://github.com/seuusuario" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://linkedin.com/in/seuusuario" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="mailto:seuemail@email.com"><i class="fas fa-envelope"></i></a>
-        </div>
-    </header>
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                <span>Disponível para oportunidades</span>
+            </div>
+            <h1 class="hero-title">
+                Olá, eu sou <span class="highlight">Rogerio Otaviano Mesquita Junior</span>
+            </h1>
+            <p class="hero-subtitle"><span class="typing-text">Desenvolvedor Full Stack</span></p>
+            <p class="hero-description">Transformando ideias em código elegante e funcional</p>
 
-    <!-- Sobre -->
+            <div class="hero-cta">
+                <a href="#projetos" class="btn btn-primary">
+                    <i class="fas fa-rocket"></i> Ver Projetos
+                </a>
+                <a href="#contato" class="btn btn-secondary">
+                    <i class="fas fa-paper-plane"></i> Contactar
+                </a>
+            </div>
+
+            <div class="hero-social">
+                <a href="https://github.com/projetosprofissionais" target="_blank" class="social-link" data-tooltip="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/rogerio-otaviano-524479384" target="_blank" class="social-link" data-tooltip="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://instagram.com/mesquitafs.dev/" target="_blank" class="social-link" data-tooltip="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+
+            <div class="hero-scroll">
+                <a href="#sobre">
+                    <span>Rolar para baixo</span>
+                    <i class="fas fa-chevron-down"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE -->
     <section id="sobre" class="section">
         <div class="container">
-            <h2 class="section-title">Sobre Mim</h2>
-            <div class="sobre-content">
-                <div class="sobre-texto">
-                    <p>Sou desenvolvedor apaixonado por criar soluções inovadoras. Com experiência em diversas tecnologias, busco sempre aprender e evoluir na área de programação.</p>
-                    <p>Atualmente estudo e desenvolvo projetos pessoais, sempre mirando em crescimento profissional.</p>
+            <div class="section-header">
+                <span class="section-tag">sobre</span>
+                <h2 class="section-title">Sobre Mim</h2>
+                <p class="section-subtitle">Minha jornada na tecnologia</p>
+            </div>
+
+            <div class="sobre-container">
+                <div class="sobre-card">
+                    <div class="sobre-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Quem Sou</h3>
+                    <p>Desenvolvedor full-stack Junior apaixonado por criar soluções inovadoras. Estou em transição de carreira para tecnologia.</p>
                 </div>
-                <div class="sobre-info">
-                    <div class="info-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>Brasil</span>
+
+                <div class="sobre-card">
+                    <div class="sobre-icon">
+                        <i class="fas fa-bullseye"></i>
                     </div>
-                    <div class="info-item">
-                        <i class="fas fa-envelope"></i>
-                        <span>seuemail@email.com</span>
+                    <h3>Objetivo</h3>
+                    <p>Buscar uma oportunidade para ingressar no mercado da tecnologia e contribuir em projetos desafiadores.
+                        focado em aprender e crescer como desenvolvedor, trazendo minha experiência prévia para agregar valor às equipes e projetos.
+                    </p>
+                </div>
+
+                <div class="sobre-card">
+                    <div class="sobre-icon">
+                        <i class="fas fa-heart"></i>
                     </div>
+                    <h3>O Que Gosto</h3>
+                    <p>Trabalho em equipe, resolver problemas complexos e criar experiências digitais impactantes.
+                        trazendo minha paixão por tecnologia e minha experiência prévia para contribuir em projetos inovadores e desafiadores.
+                    </p>
+                </div>
+            </div>
+
+            <div class="sobre-stats">
+                <div class="stat-box">
+                    <div class="stat-icon"><i class="fas fa-code"></i></div>
+                    <div class="stat-number" data-count="6">3</div>
+                    <div class="stat-label">Meses de Estudo</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-icon"><i class="fas fa-folder-open"></i></div>
+                    <div class="stat-number" data-count="3">0</div>
+                    <div class="stat-label">Projetos</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-icon"><i class="fas fa-layer-group"></i></div>
+                    <div class="stat-number" data-count="6">0</div>
+                    <div class="stat-label">Tecnologias</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Skills -->
+    <!-- SKILLS -->
     <section id="skills" class="section bg-alt">
         <div class="container">
-            <h2 class="section-title">Skills</h2>
+            <div class="section-header">
+                <span class="section-tag">skills</span>
+                <h2 class="section-title">Habilidades</h2>
+                <p class="section-subtitle">Tecnologias que domino</p>
+            </div>
+
             <div class="skills-grid">
-                <div class="skill-card">
-                    <i class="fab fa-html5"></i>
-                    <span>HTML</span>
+                <div class="skill-item">
+                    <div class="skill-icon" style="--skill-color: #e34f26;">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <span class="skill-name">HTML</span>
+                    <div class="skill-bar"><div class="skill-progress" style="--progress: 90%;"></div></div>
                 </div>
-                <div class="skill-card">
-                    <i class="fab fa-css3-alt"></i>
-                    <span>CSS</span>
+
+                <div class="skill-item">
+                    <div class="skill-icon" style="--skill-color: #264de4;">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <span class="skill-name">CSS</span>
+                    <div class="skill-bar"><div class="skill-progress" style="--progress: 85%;"></div></div>
                 </div>
-                <div class="skill-card">
-                    <i class="fab fa-js"></i>
-                    <span>JavaScript</span>
+
+                <div class="skill-item">
+                    <div class="skill-icon" style="--skill-color: #f7df1e;">
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <span class="skill-name">JavaScript</span>
+                    <div class="skill-bar"><div class="skill-progress" style="--progress: 80%;"></div></div>
                 </div>
-                <div class="skill-card">
-                    <i class="fab fa-python"></i>
-                    <span>Python</span>
+
+                <div class="skill-item">
+                    <div class="skill-icon" style="--skill-color: #3776ab;">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <span class="skill-name">Python</span>
+                    <div class="skill-bar"><div class="skill-progress" style="--progress: 75%;"></div></div>
                 </div>
-                <div class="skill-card">
-                    <i class="fab fa-java"></i>
-                    <span>Java</span>
+
+                <div class="skill-item">
+                    <div class="skill-icon" style="--skill-color: #b07219;">
+                        <i class="fab fa-java"></i>
+                    </div>
+                    <span class="skill-name">Java</span>
+                    <div class="skill-bar"><div class="skill-progress" style="--progress: 70%;"></div></div>
                 </div>
-                <div class="skill-card">
-                    <i class="fas fa-database"></i>
-                    <span>SQL</span>
+
+                <div class="skill-item">
+                    <div class="skill-icon" style="--skill-color: #00758f;">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <span class="skill-name">SQL</span>
+                    <div class="skill-bar"><div class="skill-progress" style="--progress: 75%;"></div></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projetos -->
+    <!-- PROJETOS EM BREVE -->
     <section id="projetos" class="section">
         <div class="container">
-            <h2 class="section-title">Projetos</h2>
-            <div class="projetos-grid">
-                <!-- Card Em Breve -->
-                <div class="projeto-card proyekto-em-breve">
-                    <div class="projeto-img">
-                        <i class="fas fa-code"></i>
-                    </div>
-                    <div class="projeto-info">
-                        <h3>Em Breve 🚀</h3>
-                        <p>Estou trabalhando em novos projetos. Em breve estarei adicionando aqui!</p>
-                        <div class="projeto-techs">
-                            <span>Em Desenvolvimento</span>
-                        </div>
-                    </div>
-                </div>
+            <div class="section-header">
+                <span class="section-tag">projetos</span>
+                <h2 class="section-title">Meus Projetos</h2>
+                <p class="section-subtitle">Em breve aqui!</p>
+            </div>
 
-                <!-- Segundo Card Em Breve -->
-                <div class="projeto-card proyekto-em-breve">
-                    <div class="projeto-img">
+            <div class="projects-grid">
+                <article class="project-card project-coming">
+                    <div class="project-image">
                         <i class="fas fa-laptop-code"></i>
                     </div>
-                    <div class="projeto-info">
+                    <div class="project-content">
                         <h3>Em Breve 🚀</h3>
-                        <p>Novos projetos estão sendo construídos. Fique atento!</p>
-                        <div class="projeto-techs">
-                            <span>Em Desenvolvimento</span>
+                        <p>Projetos em desenvolvimento. Acompanhe no GitHub!</p>
+                        <div class="project-tags">
                         </div>
                     </div>
+                </article>
+
+                <article class="project-card project-coming">
+                    <div class="project-image">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Em Breve 🚀</h3>
+                        <p>Projetos em desenvolvimento. Acompanhe no GitHub!</p>
+                        <div class="project-tags">
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card project-coming">
+                    <div class="project-image">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Em Breve 🚀</h3>
+                        <p>Projetos em desenvolvimento. Acompanhe no GitHub!</p>
+                        <div class="project-tags">
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="projects-notice">
+                <div class="notice-box">
+                    <i class="fas fa-clock"></i>
+                    <p>Novos projetos em breve! Acompanhe meu <a href="https://github.com/projetosprofissionais" target="_blank">GitHub</a> para ficar atualizado.</p>
                 </div>
             </div>
-            <p class="projetos-aviso">Acompanhe我的 GitHub para novos projetos!</p>
         </div>
     </section>
 
-    <!-- Contato -->
-    <section id="contato" class="section bg-alt">
-        <div class="container">
-            <h2 class="section-title">Contato</h2>
-            <p class="contato-sub">Vamos trabalhar juntos? Entre em contato!</p>
-            <div class="contato-links">
-                <a href="https://github.com/seuusuario" class="contato-btn">
-                    <i class="fab fa-github"></i>
-                    <span>GitHub</span>
+  <!-- CONTATO -->
+<section id="contato" class="section bg-alt">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">contato</span>
+            <h2 class="section-title">Vamos Conversar?</h2>
+            <p class="section-subtitle">Entre em contato para oportunidades</p>
+        </div>
+
+        <div class="contact-container">
+            <p class="contact-intro">Estou disponível para oportunidades de trabalho, colaborações e networking. Vamos criar algo incrível juntos?</p>
+
+            <div class="contact-grid">
+                <!-- GitHub -->
+                <a href="https://github.com/projetosprofissionais" target="_blank" class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <div class="contact-info">
+                        <h4>GitHub</h4>
+                        <p>projetosprofissionais</p>
+                    </div>
+                    <i class="fas fa-arrow-right contact-arrow"></i>
                 </a>
-                <a href="https://linkedin.com/in/seuusuario" class="contato-btn">
-                    <i class="fab fa-linkedin"></i>
-                    <span>LinkedIn</span>
+
+                <!-- LinkedIn -->
+                <a href="https://linkedin.com/in/rogerio-otaviano-524479384/" target="_blank" class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fab fa-linkedin-in"></i>
+                    </div>
+                    <div class="contact-info">
+                        <h4>LinkedIn</h4>
+                        <p>Rogerio Otaviano Mesquita Junior</p>
+                    </div>
+                    <i class="fas fa-arrow-right contact-arrow"></i>
                 </a>
-                <a href="mailto:seuemail@email.com" class="contato-btn">
-                    <i class="fas fa-envelope"></i>
-                    <span>Email</span>
+
+                <!-- WhatsApp -->
+                <a href="https://wa.me/5585994037280" target="_blank" class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <div class="contact-info">
+                        <h4>WhatsApp</h4>
+                        <p>Fale comigo e faça um orcçamento para seu projeto!</p>
+                    </div>
+                    <i class="fas fa-arrow-right contact-arrow"></i>
+                </a>
+
+                <!-- Instagram -->
+                <a href="https://instagram.com/mesquitafs.dev/" target="_blank" class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <div class="contact-info">
+                        <h4>Instagram</h4>
+                        <p>@mesquitafs.dev</p>
+                    </div>
+                    <i class="fas fa-arrow-right contact-arrow"></i>
+                </a>
+
+                <!-- Email -->
+                <a href="mailto:rogeriootaviano32@gmail.com" class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-info">
+                        <h4>Email</h4>
+                        <p>rogeriootaviano32@gmail.com</p>
+                    </div>
+                    <i class="fas fa-arrow-right contact-arrow"></i>
                 </a>
             </div>
         </div>
-    </section>
-
-    <!-- Footer -->
+    </div>
+</section>
+    <!-- FOOTER -->
     <footer>
-        <p>© 2024 Rogerio Otaviano. Feito com ❤️</p>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span>Mesquita</span><span>Dev</span>
+            </div>
+            <p class="footer-text">© <span class="year"></span> Rogerio Otaviano Mesquita Junior. Feito com <i class="fas fa-heart"></i> e muita cafeína ☕</p>
+            <div class="footer-social">
+                <a href="https://github.com/SEU-USERNAME" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/SEU-USERNAME" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://instagram.com/SEU-USERNAME" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
     </footer>
 
     <script src="script.js"></script>
